@@ -1,7 +1,7 @@
 public class Point {
 
   /* Global Variables */
-  private intended x;
+  private int x;
   private int y;
 
   /* Constructor */
@@ -15,7 +15,7 @@ public class Point {
     this.y = 0;
   }
 
-  /* Accessr Mehods */
+  /* Accessor Mehods */
   public int getX(){
     return this.x;
   }
@@ -33,9 +33,20 @@ public class Point {
     this.y = a;
   }
 
+  public int getDistance(Point p){
+    double num = Math.sqrt((this.x-p.x)*(this.x-p.x)+(this.y-p.y)*(this.y-p.y));
+    int num2 = (int)num;
+    return num2;
+  }
+
   /* Calculator Methods */
 
   public String toString() {
     return "x:" + this.x + " y:" + this.y;
   }
+  public static void main(String args[]){
+      Point p1 = new Point(2,3);
+      Point p2 = new Point(-5,-9);
+    System.out.println(p1.getDistance(p2));
   }
+}
