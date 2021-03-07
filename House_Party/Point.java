@@ -1,11 +1,11 @@
 public class Point {
 
   /* Global Variables */
-  private double x;
-  private double y;
+  private intended x;
+  private int y;
 
   /* Constructor */
-  Point(double a, double b){
+  Point(int a, int b){
     this.x = a;
     this.y = b;
   }
@@ -16,20 +16,20 @@ public class Point {
   }
 
   /* Accessr Mehods */
-  public double getX(){
+  public int getX(){
     return this.x;
   }
 
-  public double getY(){
+  public int getY(){
     return this.y;
   }
 
   /* Modifier Methods */
-  public void setX(double a){
+  public void setX(int a){
     this.x = a;
   }
 
-  public void setY(double a){
+  public void setY(int a){
     this.y = a;
   }
 
